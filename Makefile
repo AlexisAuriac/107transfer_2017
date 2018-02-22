@@ -10,7 +10,7 @@ NAME	=	107transfer
 all	:	$(NAME)
 
 $(NAME)	:
-		cp src/transfer.pl $(NAME)
+		cp transfer.pl $(NAME)
 
 fclean	:
 		rm -f $(NAME)
