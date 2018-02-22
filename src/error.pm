@@ -13,7 +13,7 @@ sub error {
 	}
 	for (my $i = 0 ; $i < length $pol ; ++$i) {
 	    my $char = substr($pol, $i, 1);
-	    if (($char lt 1 || $char gt 9) && $char ne "*") {
+	    if (($char lt 0 || $char gt 9) && $char ne "*") {
 		return (84);
 	    }
 	    elsif ($char eq "*" && substr($pol, $i + 1, 1) eq "*") {
