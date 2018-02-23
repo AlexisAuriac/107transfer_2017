@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 sub error {
-    if (scalar @ARGV == 0) {
+    if (scalar @ARGV == 0 || scalar(@ARGV) % 2 != 0) {
 	return (84);
     }
     foreach my $pol (@ARGV) {
